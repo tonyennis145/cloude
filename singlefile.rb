@@ -10,9 +10,10 @@ configure :development do
   also_reload 'helpers.rb'
 end
 
-set :public_folder, '.'
-
 helpers AppHelpers
+
+set :host_authorization, { permitted_hosts: ['single-file.dev'] }
+set :public_folder, '.'
 
 get '/' do
   content = File.read("readme.md")
