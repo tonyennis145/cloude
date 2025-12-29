@@ -2,3 +2,4 @@
 *.pid.lock
 *.pid
 .env
+CLAUDE.md
