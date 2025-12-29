@@ -1,0 +1,9 @@
+development:
+  adapter: postgresql
+  database: play_development
+  username: claude
+
+production:
+  adapter: postgresql
+  database: play_production
+  username: claude
